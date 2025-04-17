@@ -4,7 +4,7 @@ A high-performance Solana vanity wallet generator that finds wallets with addres
 
 ## Features
 
-- Generate Solana wallets with addresses ending with a specific suffix
+- Generate Solana wallets with addresses ending with exactly "pump" in lowercase
 - Utilize multiple threads for high-performance wallet generation
 - Store generated wallets in MongoDB for easy access and management
 - Configurable via command-line arguments or environment variables
@@ -41,7 +41,6 @@ Run the application with default settings:
 - `-m, --mongodb-uri <MONGODB_URI>`: MongoDB connection string (default: "mongodb://localhost:27017")
 - `--db-name <DB_NAME>`: MongoDB database name (default: "vanity_wallets")
 - `--collection-name <COLLECTION_NAME>`: MongoDB collection name (default: "wallets")
-- `-s, --suffix <SUFFIX>`: The suffix to search for in wallet addresses (default: "pump")
 
 ### Environment Variables
 
