@@ -1,0 +1,20 @@
+[package]
+name = "solana-vanity-wallet"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-sdk = "1.17.0"
+mongodb = { version = "2.7.0", features = ["tokio-runtime"] }
+tokio = { version = "1.32.0", features = ["full"] }
+rayon = "1.8.0"
+clap = { version = "4.4.6", features = ["derive", "env"] }
+serde = { version = "1.0.188", features = ["derive"] }
+futures = "0.3.28"
+bs58 = "0.5.0"
+dotenv = "0.15.0"
+anyhow = "1.0.75"
+log = "0.4.20"
+env_logger = "0.10.0"
+num_cpus = "1.16.0"
+chrono = { version = "0.4.31", features = ["serde"] }
