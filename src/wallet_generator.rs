@@ -27,7 +27,7 @@ impl WalletGenerator {
         let is_vanity = pubkey.ends_with("pump");
 
         if is_vanity {
-            log::debug!("Found vanity wallet ending with 'pump': {}", pubkey);
+            log::info!("Found vanity wallet ending with 'pump': {}", pubkey);
         } else {
             log::trace!("Public key {} does not end with 'pump'", pubkey);
         }
